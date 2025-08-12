@@ -1,0 +1,58 @@
+From ae9b9c53bbb27528bacb78a8b2620c0b6c1cc561 Mon Sep 17 00:00:00 2001
+From: Yongmeng Ye <52912012+KevlarKanou@users.noreply.github.com>
+Date: Mon, 11 Aug 2025 16:32:20 +0800
+Subject: [PATCH] flatpak
+
+---
+ pubspec.yaml | 24 +++++++++++++-----------
+ 1 file changed, 13 insertions(+), 11 deletions(-)
+
+diff --git a/pubspec.yaml b/pubspec.yaml
+index d15ad14..184200f 100644
+--- a/pubspec.yaml
++++ b/pubspec.yaml
+@@ -14,21 +14,22 @@ dependencies:
+     sdk: flutter
+ 
+   rwkv_mobile_flutter:
+-    path: ../rwkv_mobile_flutter
++    path: ./rwkv_mobile_flutter
+   #    git:
+   #      url: https://github.com/MollySophia/rwkv_mobile_flutter
+   #      ref: dev
+ 
+   rwkv_downloader:
+-    # path: ../rwkv_downloader
+-    git:
+-      url: https://github.com/RWKV-APP/rwkv_downloader.git
+-      ref: master
++    path: ./rwkv_downloader
++  #  git:
++  #    url: https://github.com/RWKV-APP/rwkv_downloader.git
++  #    ref: master
+ 
+   photo_viewer:
+-    git:
+-      url: https://github.com/HaloWang/photo_viewer
+-      ref: main
++    path: ./photo_viewer
++  #  git:
++  #    url: https://github.com/HaloWang/photo_viewer
++  #    ref: main
+ 
+   adaptive_dialog: ^2.4.1
+   audioplayers: ^6.4.0
+@@ -70,9 +71,10 @@ dependencies:
+   pretty_qr_code: ^3.4.0
+   rxdart: ^0.28.0
+   disable_battery_optimization:
+-    git:
+-      url: https://github.com/pvsvamsi/Disable-Battery-Optimizations
+-      ref: 3bd744d
++    path: ./disable_battery_optimization
++  #  git:
++  #    url: https://github.com/pvsvamsi/Disable-Battery-Optimizations
++  #    ref: 3bd744d
+   mp_audio_stream: ^0.2.2
+   font_awesome_flutter: ^10.8.0
+   shelf: ^1.4.2

@@ -38,13 +38,13 @@ modules:
       - pubspec-sources.json
       - type: git
         url: https://github.com/RWKV-APP/RWKV_APP.git
-        commit: 8580be6331fd76f1aeca699c3d8ae1dfe1a2e628
+        commit: 6040586cb329b15ccbdac335f5e22469b0da6ede
       - type: patch
         path: patches/pubspec.patch
         dest: .
       - type: git
         url: https://github.com/MollySophia/rwkv_mobile_flutter.git
-        commit: c2c7f32b427c5d3e3a70b481b789dea35fb8a7b4
+        commit: 916131201e3577d449d9ee0c76f0eb2e2b900463
         dest: rwkv_mobile_flutter
       - type: git
         url: https://github.com/RWKV-APP/rwkv_downloader.git
